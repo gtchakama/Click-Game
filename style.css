@@ -31,16 +31,17 @@ h2 {
 }
 
 h3 {
-	margin: 100px 200px 0;
+	margin: 80px 200px 0;
 	font-size: 20px;
 }
 
 button {
 	border: none;
-	height: 60px;
-	width: 180px;
+	height: auto;
+	width: auto;
+  padding: 20px;
 	margin-top: 50px;
-	font-size: 40px;
+	font-size: 20px;
 	background-color: #283747;
 	color: #ECF0F1;
 	text-decoration: none;
@@ -54,7 +55,7 @@ button:hover{
 }
 
 #container {
-	padding-bottom: 58px;
+	padding-bottom: 20px;
 }
 
 #counter {
@@ -72,6 +73,7 @@ button:hover{
   margin: 0 auto;
   padding-top: 50px;
   background: #BDC3C7;
+  border: 2px solid black;
 }
 
 .wrapper, .wrapper * {
@@ -138,7 +140,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 58px;
+    height: auto;
     z-index: 600;
 }
 
@@ -217,10 +219,234 @@ button {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+  #modal {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 0px;
+    margin: 20px 0;
+      }
+  
+  h2 {
+    font-size: 18px;
+    margin:40px;
+  }
+  
+  h3 {
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  button {
+    font-family: 'Fugaz One', cursive;
+    border: none;
+    height: 60px;
+    width: 180px;
+    margin-top: 20px;
+    font-size: 25px;
+    
+  }
+
+  
+#counter {
+	padding-top: 50px;
+	font-size: 50px;
+	z-index: 400;
+}
+
+.wrapper {
+  width: auto;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+  
+#modal {
+	position: absolute;
+  width: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  background-color: #2E86C1;
+	z-index: 500;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 30px;
+    font-family: 'Fugaz One', cursive;
+    color: #ffffff;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom:  20px;
+}
+
+h3 {
+	margin: 80px 200px 0;
+	font-size: 20px;
+}
+
+button {
+	border: none;
+	height: auto;
+	width: auto;
+  padding: 20px;
+	margin-top: 50px;
+	font-size: 20px;
+	background-color: #283747;
+	color: #ECF0F1;
+	text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 5px;
+}
+button:hover{
+    background-color: #ffffff;
+    transition-duration: 1s;
+    color: #132537;
+}
+
+#container {
+	padding-bottom: 20px;
+}
+
+#counter {
+	position: relative;
+	margin: auto;
+	padding-top: 150px;
+	font-size: 200px;
+	z-index: 400;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #BDC3C7;
+  border: 2px solid black;
+}
+
+.wrapper, .wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pie {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #30d3d9;
+  border: 20px solid rgba(255,255,255,0.3);
+  
+  -webkit-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.spinner {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  border-right: none;
+  z-index: 200;
+
+}
+
+.spinner_animate {
+  -webkit-animation: rotate 30s linear ;
+  animation: rotate 30s linear ;	
+}
+
+.filler {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  left: 50%;
+  border-left: none;
+  opacity: 0;
+  z-index: 100;
+}
+
+.filler_animate {
+  -webkit-animation: opacity 30s steps(1, end)  reverse;
+  animation: opacity 30s steps(1, end)  reverse;
+}
+
+.mask {
+  position: absolute;
+  width: 53%;
+  height: 103%;
+  margin-top: -3px;
+  margin-left: -15px;
+  background: inherit;
+  opacity: 1;
+  z-index: 300;
+}
+
+.mask_animate {
+  -webkit-animation: opacity 30s steps(1, end) ;
+  animation: opacity 30s steps(1, end) ;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: 600;
+}
+
+#links_container {
+	padding: 20px;
+}
+
+a {
+	margin: 0 10px;
+	font-size: 18px;
+	color: #132537;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #132537;
+}
+a:hover{
+	color: #30d3d9;
+}
+
+
+@-webkit-keyframes rotate {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes opacity {
+  0% {opacity: 1;}
+  50%, 100% {opacity: 0;}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes opacity {
+  0% {opacity: 1;}
+  50%, 100% {opacity: 0;}
+}
+
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
