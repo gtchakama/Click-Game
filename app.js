@@ -1,3 +1,4 @@
+$("html"). on("contextmenu",function(e){ return false; });
 (function($){
     $.fn.disableSelection = function() {
         return this
