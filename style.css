@@ -258,12 +258,18 @@ button {
 	z-index: 400;
 }
 
+
 .wrapper {
+  position: relative;
   width: auto;
   height: 100vh;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 50px;
+  background: #BDC3C7;
+  border: 2px solid black;
 }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -330,119 +336,12 @@ button:hover{
 
 .wrapper {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: auto;
+  height: 100vh;
   margin: 0 auto;
   padding-top: 50px;
   background: #BDC3C7;
   border: 2px solid black;
-}
-
-.wrapper, .wrapper * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.pie {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  background: #30d3d9;
-  border: 20px solid rgba(255,255,255,0.3);
-  
-  -webkit-transform-origin: 100% 50%;
-  -o-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-}
-
-.spinner {
-  border-radius: 100% 0 0 100% / 50% 0 0 50%;
-  border-right: none;
-  z-index: 200;
-
-}
-
-.spinner_animate {
-  -webkit-animation: rotate 30s linear ;
-  animation: rotate 30s linear ;	
-}
-
-.filler {
-  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-  left: 50%;
-  border-left: none;
-  opacity: 0;
-  z-index: 100;
-}
-
-.filler_animate {
-  -webkit-animation: opacity 30s steps(1, end)  reverse;
-  animation: opacity 30s steps(1, end)  reverse;
-}
-
-.mask {
-  position: absolute;
-  width: 53%;
-  height: 103%;
-  margin-top: -3px;
-  margin-left: -15px;
-  background: inherit;
-  opacity: 1;
-  z-index: 300;
-}
-
-.mask_animate {
-  -webkit-animation: opacity 30s steps(1, end) ;
-  animation: opacity 30s steps(1, end) ;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    z-index: 600;
-}
-
-#links_container {
-	padding: 20px;
-}
-
-a {
-	margin: 0 10px;
-	font-size: 18px;
-	color: #132537;
-	text-decoration: none;
-}
-
-a:visited{
-	color: #132537;
-}
-a:hover{
-	color: #30d3d9;
-}
-
-
-@-webkit-keyframes rotate {
-  0% {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(360deg);}
-}
-
-@-webkit-keyframes opacity {
-  0% {opacity: 1;}
-  50%, 100% {opacity: 0;}
-}
-
-@keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
-}
-
-@keyframes opacity {
-  0% {opacity: 1;}
-  50%, 100% {opacity: 0;}
 }
 
 
