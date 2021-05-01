@@ -9,11 +9,12 @@ body {
 
 #modal {
 	position: absolute;
+  width: auto;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-    background-color: #2E86C1;
+  background-color: #2E86C1;
 	z-index: 500;
 }
 
@@ -44,6 +45,7 @@ button {
 	color: #ECF0F1;
 	text-decoration: none;
   cursor: pointer;
+  letter-spacing: 5px;
 }
 button:hover{
     background-color: #ffffff;
@@ -178,3 +180,50 @@ a:hover{
   0% {opacity: 1;}
   50%, 100% {opacity: 0;}
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #modal {
+    position: absolute;
+    width: auto;
+  }
+
+  
+h1 {
+	font-size: 30px;
+	margin: 50px 0 40px;
+    }
+
+h2 {
+	font-size: 18px;
+	margin:40px;
+}
+
+h3 {
+	margin: 20px;
+	font-size: 20px;
+}
+
+button {
+  font-family: 'Fugaz One', cursive;
+	border: none;
+	height: 60px;
+	width: 180px;
+	margin-top: 20px;
+	font-size: 25px;
+	
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
