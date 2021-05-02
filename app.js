@@ -15,7 +15,7 @@ $(document).ready(function () {
 		$('body').css('cursor', 'pointer');
 		$('body').disableSelection(); //focusing on our game and not any other html elements
 
-		$('#modal').hide(); //hidinng inex.html home page
+		$('#modal').hide(); //hidinng index.html home page
 		$('.spinner').addClass('spinner_animate');
 		$('.filler').addClass('filler_animate');
 		$('.mask').addClass('mask_animate');
@@ -45,7 +45,7 @@ $(document).ready(function () {
 				cpsStr = 'click'
 			}
 			$('#cps').text('That\'s ' + cps + ' ' + cpsStr + ' per second!');
-			$('h3').html('<a href="click_challenge.html">Try Again?</a>');
+			$('h3').html('<a href="retake.html">Try Again?</a>');
 			$('button').hide();
 			$('#modal').show();
 
