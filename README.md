@@ -23,7 +23,7 @@ https://jsclickgame.netlify.app/
 
 Homepage
 
-[ To Be Added after project complition ]
+![image](homepage.png)
 
 # Tech Stack Used💡:
 
