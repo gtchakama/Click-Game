@@ -16,7 +16,7 @@ https://jsclickgame.netlify.app/
 
 ```
 > git clone 'https://github.com/gtchakama/click-game'
-> cd thoughtly
+> cd click-game
 ```
 
 # Screenshots📼:
